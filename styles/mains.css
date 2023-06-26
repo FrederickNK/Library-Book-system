@@ -1,0 +1,453 @@
+/* import google font */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+:root {
+    /* google font */
+    font-family: 'PT Serif', serif;
+    /* background color */
+    background-color: lightblue;
+}
+
+
+/**********************************************/
+/*          General Page Sections             */
+/**********************************************/
+
+header {
+
+    display: flex;
+    /*stacks images and heading veyticallu*/
+    flex-direction: column;
+    /*remove default stretch*/
+    justify-items: flex-start;
+    align-items: center;
+    margin-bottom: 0.5em;
+    /*create space between header and any container under it */
+}
+
+body {
+    /*flexbox stacks all item in body horizontally*/
+    display: flex;
+    flex-direction: column;
+    /*remove default stretch*/
+    /*fill page vertically, but still get bigger*/
+    min-height: 100vh;
+    /* transparent shows light blue background through - then fades to white */
+    background: linear-gradient(transparent, white);
+    /*center all item in the body  */
+    align-items: center;
+}
+
+main {
+    display: flex;
+    /*stacks nav and section horizontally*/
+    flex-direction: column;
+    /*remove default stretch*/
+    align-items: center;
+    /*remove default stretch*/
+    flex: 1;
+    /* grow this element to fill verical space, pushing footer to bottom*/
+    margin: 0.5em;
+    /*font-size: 1.1rem;*/
+    min-width: 50vh;
+}
+
+main div {
+    /*space between div in main  */
+    margin: 0.5em;
+}
+
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section div {
+
+    display: flex;
+    flex-direction: column;
+    /*remove default stretch*/
+    background-color: rgb(145, 193, 204);
+    padding: 0.8em 0.5em 0.5em 0.5em;
+    margin: 0.5em;
+    border-radius: 1em;
+    border: solid darkblue;
+    flex: 1;
+    /* grow this element to fill verical space, pushing footer to bottom*/
+    max-width: 12em;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    /*remove default stretch*/
+    background-color: whitesmoke;
+    align-items: center;
+    min-width: 100%;
+    justify-content: flex-end;
+    border: solid lightseagreen;
+}
+
+select {
+    background-color: rgb(200 220 252);
+    padding: 0.4em 0.4em;
+    border-radius: 0.5em;
+    border: solid white;
+    box-shadow: 0em 0.2em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+/**********************************************/
+/*                 Heading Styles             */
+/**********************************************/
+header h1 {
+    display: flex;
+    flex-direction: column;
+    /*remove default stretch*/
+    background-color: oldlace;
+    align-items: center;
+    /* centers h1*/
+    padding: 0.3em;
+    border: solid lightseagreen;
+    border-radius: 1em;
+    /*rounded corners*/
+}
+
+
+
+/**********************************************/
+/*                 Form Styles                */
+/**********************************************/
+form {
+
+    border-radius: .5em;
+    /*rounded corners*/
+    display: flex;
+    flex-direction: column;
+    /*remove default stretch*/
+    padding: 0.5em 1em 1em 1em;
+    /* add space */
+    align-items: center;
+
+
+}
+
+#loginin,
+#Addbook_user,
+#resetpass,
+#register {
+    /* Change background color to white */
+    background-color: white;
+}
+
+#register div {
+    display: flex;
+    flex: 1;
+    /* grow this element to fill verical space, pushing footer to bottom*/
+    flex-direction: column;
+    margin-bottom: 0.5em;
+}
+
+#Addbook_user,.logbuttons {
+    display: flex;
+    flex-direction: row;
+    /*remove default stretch*/
+}
+
+
+
+
+#Addbook_user div {
+    display: flex;
+    flex-direction: column;
+    /*remove default stretch*/
+}
+
+
+.RM {
+
+    display: flex;
+    flex-direction: row;
+    /*remove default stretch*/
+}
+
+main .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main p {
+    background-color: white;
+    padding: 1em;
+}
+
+main section p {
+    background-color: rgb(145, 193, 204);
+}
+
+fieldset {
+    display: flex;
+    /* default stretch*/
+    border: solid white;
+    /* make border color white */
+    margin-bottom: 0.5em;
+}
+
+
+
+/**********************************************/
+/*        Nav and Button Styles              */
+/**********************************************/
+
+button {
+    background-color: rgb(118, 162, 230);
+    color: white;
+    /*color of text in buttton */
+    border: solid white;
+    /*color of border*/
+    margin-bottom: 0.5em;
+    /*space between "buttons" */
+    padding: 0.5em 2em 0.5em 2em;
+    border-radius: 1.5em;
+    /* make border corners more rounded*/
+    box-shadow: 0em 0.2em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+input {
+    padding: 0.5em 4em 0.5em 0.5em;
+    outline: none;
+    /*remove default border*/
+}
+
+nav {
+    display: flex;
+    /* default flex*/
+}
+
+div .previous,
+div .next,
+nav a,
+nav a:visited,
+div a {
+    margin: 0.5em;
+    padding: 0.3em;
+    /*space inside border*/
+    border-radius: 0.7em;
+    /*rounded corners*/
+    border: 0.3em solid #23b2ad;
+    text-align: center;
+    /* make it more button like with shadow */
+    box-shadow: 0em 0.2em 0.3em rgba(9, 56, 36, 0.5);
+    text-decoration: none;
+    /*remove underline*/
+    color: rgb(0, 0, 0);
+    border: solid white;
+}
+
+/*swap colours on hover*/
+a:hover,
+button:hover {
+    background: rgb(162, 162, 238);
+    color: white;
+    border: solid white;
+}
+
+/*swap colours on hover*/
+select:hover {
+    background: rgb(195, 213, 243);
+    color: black;
+    border: solid white;
+}
+/*------------------------------------------------------------------------------
+|                               Error Styles
+|-----------------------------------------------------------------------------*/
+
+.error {
+    color:red;
+    display: block;
+    margin: 0.3em;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+
+/*------------------------------------------------------------------------------
+|                               Star Styles
+|-----------------------------------------------------------------------------*/
+
+/* Styling for the book rating container */
+#Addbook_user .rate {
+    display: inline-block;
+    flex-direction: row;
+  } 
+
+  /* Styling for the rating stars */
+  .rate {
+    float: left;  /* Float the stars to the left */
+    font-size: 2.5em;
+  }
+
+  /* Styling for the unchecked stars' input */
+  .rate:not(:checked) > input {
+    position: fixed;
+    top: -9999px; /* Move the input far away from the visible area */
+  }
+
+  /* Styling for the unchecked stars' label */
+  .rate:not(:checked) > label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    color: #ccc;
+  }
+
+  /* Styling for the unchecked stars' label before pseudo-element */
+  .rate:not(:checked) > label:before {
+    content: ' ★ '; /* Add a star character before the label text */
+  }
+
+  /* Styling for the checked star's label */
+  .rate > input:checked ~ label {
+    color: #fde90e;  /* Set the color of the label text to yellow for checked stars */
+  }
+
+  /* Styling for the hover state of the unchecked star's label */
+  .rate:not(:checked) > label:hover,
+  .rate:not(:checked) > label:hover ~ label {
+    color: #fde90e;
+  }
+  
+  /* Styling for Highlight stars behind the selected one */
+  .rate > input:checked ~ label:before,
+  .rate > input:checked ~ label:hover:before,
+  .rate > label:hover ~ input:checked ~ label:before {
+    content: ' ★ ';
+    color: #fde90e;
+  }
+  
+
+/*------------------------------------------------------------------------------
+|                               modal window Styles
+|-----------------------------------------------------------------------------*/
+
+/* Styling for the modal container */
+.modal {
+    position: fixed;  /* Make the modal fixed in the viewport */
+    z-index: 1000; /* Set a high z-index to ensure it appears above other elements */
+    left: 0;
+    top: 0;
+    /* Set the width and height to 100% to cover the entire viewport */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background color to dim the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the modal content */
+.modal-content {
+    background-color: #fff;
+    max-width: 90em;
+    max-height: 100vh;
+    overflow-y: auto;  /* Add vertical scrolling to the content if it exceeds the max height */
+    padding: 2.5em;
+    position: relative;
+    border-radius: 0.5em; /* rounded corners to the content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for the close button */
+
+.close-button {
+    position: absolute; /* Set the position to absolute to position the button */
+    top: .5em;
+    right: .5em;
+    font-size: 1em;
+    cursor: pointer; /* Add a cursor pointer to indicate the button is clickable */
+    color: #333;
+    padding: 0.1em 0.5em 0.1em 0.5em;
+}
+
+/* Styling for the hover state of the close button */
+.close-button:hover {
+    color: white;
+}
+
+/*------------------------------------------------------------------------------
+|                                nav dropdown Styles
+|-----------------------------------------------------------------------------*/
+
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color:lightblue; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 1em;
+    font-size: 0.8em;
+    margin-left: 1em;
+    background-color:lightblue;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color:lightblue;
+    color: black;
+    padding: 0.5em;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color:lightblue;
+    color: white;
+
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 2em;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+

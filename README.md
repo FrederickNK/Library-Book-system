@@ -33,6 +33,11 @@ web-based
 Explain how to use the project. If the project has a UI, provide screenshots or
 GIFs showcasing the usage.
 
+
+
+https://github.com/FrederickNK/Library-Book-system/assets/98110751/8dd4a278-9c0e-4a19-acb5-3ac5eb014b22
+
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to
